@@ -1,0 +1,44 @@
+Uncaught TypeError: Cannot read property 'value' of null  类型错误  value为空无法读取属性 （看是不是获取id括号里面没有加引号。或者js写在body前面）
+
+Uncaught TypeError: Cannot read property 'left' of undefined 类型错误，同上，表示left的上一个对象为undefine，原因同上
+（看是不是获取id括号里面没有加引号。或者js写在body前面，或者检查声明对象的方法是否有问题，一般就是那一行的语法有问题如var fire=document.createElement("div");错写成var fire=document.getElementById("div");就会出现报错）
+	反正就是引用失败，没有获取到对象
+*******************************************************************************************
+Uncaught SyntaxError:Invalid or Unexpected token  句法错误 无效或未知字符
+**实现DOM鼠标拖拽效果，不能在CSS样式中加margin:auto;这种除了js以外还会影响位置结果的样式定义，会对最终结果造成叠加的影响，JS代码结果会正常出来但是效果会出不来，因为收到了其他的css样式(margin：auto)的影响##
+！！！！！！！！！！！！！！
+js直接获取不到非行内样式，修改的跟获取的样式要写在行内才行
+
+obj  instanceof Array--->系统自带的数组
+
+let关键字 let则允许声明一个作用域被限制在块级中的变量、语句或者表达式。
+
+js 报错提示; Uncaught  ReferenceError 引用错误
+                                   RangeError   范围/边界错误
+		   TypeError      类型错误
+		   SyntaxError    语法错误
+                                   DOMException: Failed to execute 'appendChild' on 'Node': Only one element on document allowed.
+*********************************************************************************
+Uncaught SyntaxError: Identifier 'Iphone' has already been declared
+错误代码：
+class Ipad{
+            playgame(){
+                console.log("打游戏")
+            }
+        }
+        class Iphone extends Ipad{
+            callphone(){
+                console.log("打电话")
+            }
+        }
+        let Iphone=new Iphone();//声明的变量名
+        let ipad=new Ipad();
+        
+        test(new Adapter(Iphone));
+        test(new Adapter(ipad));
+原因：
+	用的class类，实例化的时候变量名字不能跟类名完全一样，不然会直接只想class类，就会报错，这里是因为首字母大写跟类名完全一样，把Iphone换成iPhoneji'h
+
+？？？？？？？
+效果出不来，代码查不出错误：
+1：代码格式化，清除浏览器缓存，查看文件路径

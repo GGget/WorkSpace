@@ -1,0 +1,4 @@
+Object.key(对象名 )获取对象属性
+Object.value(对象名)获取对象属性值
+var obj = Object.create(father)以father对象为原型复制一个新对象
+Object.definePropert!(对象名，对象的属性))用来监听属性的变化

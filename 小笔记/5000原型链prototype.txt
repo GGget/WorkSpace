@@ -1,0 +1,9 @@
+概念：继承 原型(就是给对象的默认封装) 对象
+原型继承
+原型链
+call/apply不能继承原型中的方法
+ _Ipod_ ===Ipod.prototype
+ true
+Ipod.toString( )==>Ipod==>Ipod.prototype==>Object.prototype  ==>null（这就是原型链）
+当前对象使用一个他没有的方法时，会先找当前对象自己是否有这个方法(当然没有)，然后找这个对象的原型里有没有，没有的话继续找他继承的对象的原型（对于toString方法就是Object对象的原型），找到了就可以用这个方法，找不到就报错null
+!对象都会继承Object对象，一些常用的方法就是在Object的原型里的，所以可以不用定义就能用（事前已经被定义在Object里了）

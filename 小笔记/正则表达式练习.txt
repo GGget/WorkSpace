@@ -1,0 +1,44 @@
+var zz=/^\w+@\w(\.\w+)+$/;
+undefined
+var str="gg13366998198@163.com";
+undefined
+str
+"gg13366998198@163.com"
+zz.test(str);
+false
+var zz=/^\w+@\w+(\.\w+)+$/;
+undefined
+zz.test(str);
+true
+str="  gg13366998198@163.com  "
+"  gg13366998198@163.com  "
+str.replace(/\s+/g,"");
+"gg13366998198@163.com"
+str
+"  gg13366998198@163.com  "
+var str=str.replace(/\s+/g,"");
+undefined
+str=str.replace(/\s+/g,"");
+"gg13366998198@163.com"
+str
+"gg13366998198@163.com"
+str
+"gg13366998198@163.com"
+var yb=/^[1-9]\d{5}$/;
+undefined
+var youbian="100002";
+undefined
+yb.test(youbian);
+true
+var youbian="100002g";
+undefined
+yb.test(youbian);
+false
+var youbian="10000";
+undefined
+yb.test(youbian);
+false
+var yasuo="asd.rar";
+undefined
+var ys=/^[^\\\/:\*£¿\"\|]+\.[rar|7z|zip]&/;
+undefined

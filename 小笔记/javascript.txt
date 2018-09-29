@@ -1,0 +1,83 @@
+	字符串	类型
+name="xx"	  string
+age=18  		number
+sex=true 		boolean
+height 		undefined
+		null
+f=function() 	function
+obj=null 		object
+		symble(不等)
+《》+ - * /运算
++运算不会自动类型转换
+
+字符串作逻辑运算，有内容就是true
+number做逻辑运算，非0就是ture
+
+NaN表示不知道内容是什么，两个NaN比较一定是false 属于number类型
+   NaN ==NaN
+   false
+
+《》函数：
+
+n%2==0?2:1  表示n对2取余数是否等于零，如果是取2，不是取1，
+
+输入框中取出的值，默认都是字符串，要用数字需要转成数字Number（）；
+
+函数没返回值，调用这个函数会UNDEFINED
+
+
+《》数组（js中十分灵活）：1，可以存各种不同的数据类型，无任何类型限制
+	2，数组是不定长的，长度可以随时改变，
+	3，没有下标越界的错误，下标越界返回结果是undefined
+创建方式：JSON
+	构造函数 var arr=new Array(10)	表示长度为10
+		var arr=new Array(10,20,30)	表示内容为10,20,30，长度为3
+（数组本质是object类型，下标即是属性，下标对应的内容即属性值，所以可以直接arr["name"]="gw",输入arr.name会输出gw,但是此时数组的长度并不会因为["name"]="gw"而增加，只会在数组中加一个name：gw,可以通过arr.name或者arr["name"]得到gw,输出arr[ ]会除了数组本身内容外还有一个 name:gw）
+
+》数组方法：var a=[11, 12,23, 32, 32,34]
+	a.push() 在末尾添加
+	a.pop()  在末尾取出
+	a.shift()	从头部取出
+	a.unshift()	从头部添加
+	a.slice（m,n）取出下标m到n的元素，不包括下标n的元素
+	a.splice( m,n,x)删除下标m到n的元素，包括下标n的,填入x
+	a.reverse()将数组倒序
+	res=a.join("")将数组输出为一个字符串,""里面填什么就用什么连接，不写“”默认是数组里面的，号，引号里面什么都不写就是没有间隔。
+	res=数组1.concat(数组2)得到一个新数组，新数组由这两个数组拼接组成，不影响原数组
+《》字符串
+	常用AscII码
+	字符	ascII（10进制）
+	0~9	48~57
+	A~Z	65~90
+	a~z	97~122
+	下划线	95
+	空格	32
+arr.instanceOf（Array）判断arr是否是Array类型
+
+var sep=sep || "-";设置默认值sep是设置的函数参数
+
+Math.abs()取绝对值
+获取页面的滚动高度三种方式(处理浏览器兼容)：var scrolltop=window.scrollY || document.documentElement.scrollTop || document.body.scrollY
+《》IE兼容问题思路
+	if(IE上兼容的方法){
+		IE上兼容的方法；
+	}else{
+		其他浏览器兼容的方法；
+	}
+《》用作判断有无的标记flag要放在触发函数的外面才能存住每次改变的值、
+《》for里面套定时器没用
+《》伪数组转数组：var arr = Array.from(list);
+《》检查数据类型：typeof instanceof 是运算符不是方法
+	var oTemp=[ ];
+	alert(typeof oTemp); //输出 "Object"
+	alert(oTemp instanceof Object );//输出 " true"
+***************************************************************************************
+*var a = new Array;                                				         *
+* a							         *
+* [ ]							         *
+* typeof Array						         *
+* "function"						         *
+* typeof a							         *
+* "object"							         *
+*本质上都是函数，通过new实例化成对象，对象分有几种基本数据类型（例如数组） *
+***************************************************************************************

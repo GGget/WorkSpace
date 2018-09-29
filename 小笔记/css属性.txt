@@ -1,0 +1,33 @@
+1.文字换行：word-wrap:break-word;
+2.当鼠标点击：：focus{  点击后变成的属性  }
+	配合display可实现点击更换效果
+	例子：	标签2{ display：none； }
+		标签1：focus + 标签2{
+		display：block
+		}
+	"+"使用的两个标签相邻 表示点击标签1会触发标签2的效果
+3.鼠标移上去光标变小手（定义光标移上去的样式）：cursor：pointer；
+4.透明：	opacity: 0.5;( 会继承，让定义元素里的所有元素都透明)
+	visibility：hidden;不会脱离文档流，只是隐身不可见，仍然占用空间
+	background-color:rega(255,255,255,0.5);
+	IE中opacity不兼容，IE8及之前特有专用，用filter:alpha(opacity=50);数值是百分制，火狐谷歌浏览器对此不敏感，可以跟opacity一起使用
+5.解决父元素高度塌陷：(1)利用伪类元素    ::after{
+				content:" ";
+				clear:both	
+				display:block;
+				height:0;
+				overflow:hidden;	
+				}
+		(2)将父元素改成行内块元素 display：inline-block;
+6.触发BFC（块级格式化上下文）
+	float  除了none
+	position  ：abusolute
+	overflow 
+	display :inline-block ........
+7.浮动后的块元素没有内容的话会收缩，（塌陷）
+	浮动只对后面的元素产生影响，就是说，如果想让一个元素的浮动对另一个元素产生影响的话，就要把这个浮动的元素放在要影响的元素的前面。同理，判断某个元素是否收到浮动的影响看他前面的元素有没有浮动（浮动元素放置的前后位置会影响排版结果）
+8.div1里面的div2要居中，有宽高，div2/position:relative;margin:auto
+9.transition: 1s;让该元素的属性改变时间拉伸为一秒或N秒
+10.text-align应放在目标内容的父元素上定义，他定义的是放的元素里面的内容的属性
+	<i class="iconfont icon-jiantouxia"></i>里面没有内容，虽然页面上有字体，但并不是在尖括号中间的内容。给i加text-align：right、center，left没有效果，用浮动可以让这个字体向右对齐
+11.：hover定义的只能是这个元素本身或者它里面的元素的，所以定义它里面的元素直接写后面的元素的名称就可以。’

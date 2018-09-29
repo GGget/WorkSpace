@@ -1,0 +1,4 @@
+node 是你要复制的
+那么var cNode = node.cloneNode(true)就把这个节点克隆了,并赋值给变量cNode
+想把这个节点追加到某个元素内, 我假设元素为element
+那么element.appendChild(cNode)就可以了

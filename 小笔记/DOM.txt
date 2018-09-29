@@ -1,0 +1,23 @@
+查：document.getElementById("");
+       document.getElementsByTagName("");
+       document.getElementsByClassName("");
+       document.getElementsByName(""); //获取form表单的name
+	后三个获取的都是数组类型，用的时候要加角标[]，如果只有一个就是[0]
+	或者在var的时候直接在后面加[ ];
+增：
+	var tab = document.createElement("table");//创建一个table标签
+	body.appendChild(tab);//将创建的table标签添加到body里
+	.setAttribute("属性","值")//添加属性
+	父元素.childNodes//获取父元素下的子节点
+	.nodeType//节点类型	    ==1（元素、标签）==3（文本）==2（属性）
+	.children//过滤，获取下一级的标签，如果有多个得到的是数组
+删：
+removeChild()
+对象.removeAttribute("")//删除创建的""
+this.parentNode.parentNode.removeChild(this.parentNode) 
+将当前对象(this)的（.parentNode）父元素的（.parentNode）父元素的（.removeChild）子元素（当前对象（this）的父元素）删除《相当于删除this的父元素》
+《获取非行内样式js无法直接额获取》
+获取非行内样式的方法：getComputedStyle(ele)非IE	
+		   ele.currentStyle
+*appendChild是一部的，并且很特殊浏览器有专门的线程用来执行，所以appendChild其实是多线程的
+文档碎片：var frag=document.createDocumentFragment();

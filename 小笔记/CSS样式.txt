@@ -1,0 +1,4 @@
+@box-shadow: 10px 10px 5px #888888;	阴影：右偏移，下偏移，模糊范围，模糊距离（不设置默认为0即在阴影边缘）颜色 还可加insert设置内阴影
+@background-size:cover最大化背景图contain尽量最大化100% 100%可能会改变图片比例铺满背景
+@transition:1s;	变化时间
+@transform:

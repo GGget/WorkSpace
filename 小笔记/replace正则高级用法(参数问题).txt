@@ -1,0 +1,185 @@
+﻿var bbb="hellowbogbig sas big bog bagas";
+undefined
+bbb.replace(/(\s+)(b(a|i|o)g)/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+})
+VM309:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]0: " big"1: " "2: "big"3: "i"4: 165: "hellowbogbig sas big bog bagas"callee: ƒ (matched,s1,s2,s3)length: 6Symbol(Symbol.iterator): ƒ values()__proto__: Object
+VM309:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM309:2 Arguments(6) [" bag", " ", "bag", "a", 24, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sasundefinedundefinedundefinedas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+})
+VM312:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]0: " big"1: " "2: "big"3: "i"4: 165: "hellowbogbig sas big bog bagas"callee: ƒ (matched,s1,s2,s3)length: 6Symbol(Symbol.iterator): ƒ values()__proto__: Object
+VM312:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sasundefinedundefined bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+})
+VM313:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]0: " big"1: " "2: "big"3: "i"4: 165: "hellowbogbig sas big bog bagas"callee: ƒ (matched,s1,s2,s3)length: 6Symbol(Symbol.iterator): ƒ values()__proto__: Object
+VM313:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sasundefinedundefined bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	return s1+"bug";
+})
+VM318:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM318:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sas bug bug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	return matched+"bug";
+})
+VM321:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM321:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sas bigbug bogbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	return matched+"bug";
+})
+VM322:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM322:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+"hellowbogbig sas bigbug bogbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log(matched);
+	return matched+"bug";
+})
+VM347:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM347:3  big
+VM347:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM347:3  bog
+"hellowbogbig sas bigbug bogbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+	
+})
+VM438:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM438:3 matched big
+VM438:4 s1 
+VM438:5 s2big
+VM438:6 s3i
+VM438:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM438:3 matched bog
+VM438:4 s1 
+VM438:5 s2bog
+VM438:6 s3o
+"hellowbogbig sasundefinedundefined bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return s1+"bug";
+})
+VM441:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM441:3 matched big
+VM441:4 s1 
+VM441:5 s2big
+VM441:6 s3i
+VM441:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM441:3 matched bog
+VM441:4 s1 
+VM441:5 s2bog
+VM441:6 s3o
+"hellowbogbig sas bug bug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return s2+"bug";
+})
+VM444:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM444:3 matched big
+VM444:4 s1 
+VM444:5 s2big
+VM444:6 s3i
+VM444:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM444:3 matched bog
+VM444:4 s1 
+VM444:5 s2bog
+VM444:6 s3o
+"hellowbogbig sasbigbugbogbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return "bug";
+})
+VM451:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM451:3 matched big
+VM451:4 s1 
+VM451:5 s2big
+VM451:6 s3i
+VM451:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM451:3 matched bog
+VM451:4 s1 
+VM451:5 s2bog
+VM451:6 s3o
+"hellowbogbig sasbugbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return"bug";
+})
+VM452:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM452:3 matched big
+VM452:4 s1 
+VM452:5 s2big
+VM452:6 s3i
+VM452:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM452:3 matched bog
+VM452:4 s1 
+VM452:5 s2bog
+VM452:6 s3o
+"hellowbogbig sasbugbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return  "bug";
+})
+VM455:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM455:3 matched big
+VM455:4 s1 
+VM455:5 s2big
+VM455:6 s3i
+VM455:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM455:3 matched bog
+VM455:4 s1 
+VM455:5 s2bog
+VM455:6 s3o
+"hellowbogbig sasbugbug bagas"
+bbb.replace(/(\s+)(b(a|i|o)g)\b/g,function(matched,s1,s2,s3){
+	console.log(arguments);
+	console.log('matched'+matched);
+console.log('s1'+s1);
+console.log('s2'+s2);
+console.log('s3'+s3);
+		return  " "+"bug";
+})
+VM456:2 Arguments(6) [" big", " ", "big", "i", 16, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM456:3 matched big
+VM456:4 s1 
+VM456:5 s2big
+VM456:6 s3i
+VM456:2 Arguments(6) [" bog", " ", "bog", "o", 20, "hellowbogbig sas big bog bagas", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM456:3 matched bog
+VM456:4 s1 
+VM456:5 s2bog
+VM456:6 s3o
+"hellowbogbig sas bug bug bagas"
